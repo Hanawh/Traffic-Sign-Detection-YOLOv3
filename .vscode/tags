@@ -1,0 +1,156 @@
+!_TAG_FILE_FORMAT	2	/extended format; --format=1 will not append ;" to lines/
+!_TAG_FILE_SORTED	1	/0=unsorted, 1=sorted, 2=foldcase/
+!_TAG_PROGRAM_AUTHOR	Darren Hiebert	/dhiebert@users.sourceforge.net/
+!_TAG_PROGRAM_NAME	Exuberant Ctags	//
+!_TAG_PROGRAM_URL	http://ctags.sourceforge.net	/official site/
+!_TAG_PROGRAM_VERSION	5.9~svn20110310	//
+COCOAnnotationTransform	../utils/datasets.py	/^class COCOAnnotationTransform(object):$/;"	kind:class	line:72
+COCO_LABEL_MAP	../utils/datasets.py	/^COCO_LABEL_MAP = { 1:  1,  2:  2,  3:  3,  4:  4,  5:  5,  6:  6,  7:  7,  8:  8,$/;"	kind:variable	line:13
+Darknet	../models.py	/^class Darknet(nn.Module):$/;"	kind:class	line:234
+EmptyLayer	../models.py	/^class EmptyLayer(nn.Module):$/;"	kind:class	line:99
+ImageFolder	../utils/datasets.py	/^class ImageFolder(Dataset):$/;"	kind:class	line:53
+ListDataset	../utils/datasets.py	/^class ListDataset(Dataset):$/;"	kind:class	line:102
+Logger	../utils/logger.py	/^class Logger(object):$/;"	kind:class	line:4
+Tensor	../detect.py	/^    Tensor = torch.cuda.FloatTensor if torch.cuda.is_available() else torch.FloatTensor$/;"	kind:variable	line:64
+Upsample	../models.py	/^class Upsample(nn.Module):$/;"	kind:class	line:86
+YOLOLayer	../models.py	/^class YOLOLayer(nn.Module):$/;"	kind:class	line:106
+__call__	../utils/datasets.py	/^    def __call__(self, target):$/;"	kind:member	line:79
+__getitem__	../utils/datasets.py	/^    def __getitem__(self, index):$/;"	kind:member	line:120
+__getitem__	../utils/datasets.py	/^    def __getitem__(self, index):$/;"	kind:member	line:58
+__init__	../models.py	/^    def __init__(self):$/;"	kind:member	line:102
+__init__	../models.py	/^    def __init__(self, anchors, num_classes, img_dim=416):$/;"	kind:member	line:109
+__init__	../models.py	/^    def __init__(self, config_path, img_size=416):$/;"	kind:member	line:237
+__init__	../models.py	/^    def __init__(self, scale_factor, mode="nearest"):$/;"	kind:member	line:89
+__init__	../utils/datasets.py	/^    def __init__(self):$/;"	kind:member	line:76
+__init__	../utils/datasets.py	/^    def __init__(self, folder_path, img_size=416):$/;"	kind:member	line:54
+__init__	../utils/datasets.py	/^    def __init__(self, image_path, info_file,img_size=416, augment=True, multiscale=True):$/;"	kind:member	line:103
+__init__	../utils/logger.py	/^    def __init__(self, log_dir):$/;"	kind:member	line:5
+__init__.py	../utils/__init__.py	1;"	kind:file	line:1
+__len__	../utils/datasets.py	/^    def __len__(self):$/;"	kind:member	line:190
+__len__	../utils/datasets.py	/^    def __len__(self):$/;"	kind:member	line:69
+ap_per_class	../utils/utils.py	/^def ap_per_class(tp, conf, pred_cls, target_cls):$/;"	kind:function	line:62
+ap_table	../train.py	/^            ap_table = [["Index", "Class name", "AP"]]$/;"	kind:variable	line:174
+batch_size	../detect.py	/^        batch_size=opt.batch_size,$/;"	kind:variable	line:57
+batch_size	../test.py	/^        batch_size=8,$/;"	kind:variable	line:100
+batch_size	../train.py	/^                batch_size=8,$/;"	kind:variable	line:163
+batch_size	../train.py	/^        batch_size=opt.batch_size,$/;"	kind:variable	line:72
+batches_done	../train.py	/^            batches_done = len(dataloader) * epoch + batch_i$/;"	kind:variable	line:102
+bbox	../detect.py	/^                    bbox={"color": color, "pad": 0},$/;"	kind:variable	line:132
+bbox	../detect.py	/^                bbox = patches.Rectangle((x1, y1), box_w, box_h, linewidth=2, edgecolor=color, facecolor="none")$/;"	kind:variable	line:122
+bbox_colors	../detect.py	/^            bbox_colors = random.sample(colors, n_cls_preds)$/;"	kind:variable	line:112
+bbox_iou	../utils/utils.py	/^def bbox_iou(box1, box2, x1y1x2y2=True):$/;"	kind:function	line:193
+bbox_wh_iou	../utils/utils.py	/^def bbox_wh_iou(wh1, wh2):$/;"	kind:function	line:184
+box_h	../detect.py	/^                box_h = y2 - y1$/;"	kind:variable	line:118
+box_w	../detect.py	/^                box_w = x2 - x1$/;"	kind:variable	line:117
+build_targets	../utils/utils.py	/^def build_targets(pred_boxes, pred_cls, target, anchors, ignore_thres):$/;"	kind:function	line:267
+class_names	../test.py	/^    class_names = load_classes(data_config["names"])$/;"	kind:variable	line:79
+class_names	../train.py	/^    class_names = load_classes(data_config["names"])$/;"	kind:variable	line:55
+classes	../detect.py	/^    classes = load_classes(opt.class_path)  # Extracts class labels from file$/;"	kind:variable	line:62
+cmap	../detect.py	/^    cmap = plt.get_cmap("tab20b")$/;"	kind:variable	line:91
+collate_fn	../train.py	/^        collate_fn=dataset.collate_fn,$/;"	kind:variable	line:76
+collate_fn	../utils/datasets.py	/^    def collate_fn(self, batch):$/;"	kind:member	line:174
+color	../detect.py	/^                    color="white",$/;"	kind:variable	line:130
+color	../detect.py	/^                color = bbox_colors[int(np.where(unique_labels == int(cls_pred))[0])]$/;"	kind:variable	line:120
+colors	../detect.py	/^    colors = [cmap(i) for i in np.linspace(0, 1, 20)]$/;"	kind:variable	line:92
+compute_ap	../utils/utils.py	/^def compute_ap(recall, precision):$/;"	kind:function	line:117
+compute_grid_offsets	../models.py	/^    def compute_grid_offsets(self, grid_size, cuda=True):$/;"	kind:member	line:123
+conf_thres	../test.py	/^        conf_thres=opt.conf_thres,$/;"	kind:variable	line:97
+conf_thres	../train.py	/^                conf_thres=0.5,$/;"	kind:variable	line:160
+create_modules	../models.py	/^def create_modules(module_defs):$/;"	kind:function	line:16
+current_time	../detect.py	/^        current_time = time.time()$/;"	kind:variable	line:81
+data_config	../test.py	/^    data_config = parse_data_config(opt.data_config)$/;"	kind:variable	line:76
+data_config	../train.py	/^    data_config = parse_data_config(opt.data_config)$/;"	kind:variable	line:50
+dataloader	../detect.py	/^    dataloader = DataLoader($/;"	kind:variable	line:55
+dataloader	../train.py	/^    dataloader = torch.utils.data.DataLoader($/;"	kind:variable	line:70
+dataset	../train.py	/^    dataset = ListDataset(train_path, train_info, augment=True, multiscale=opt.multiscale_training)$/;"	kind:variable	line:69
+datasets.py	../utils/datasets.py	1;"	kind:file	line:1
+detect.py	../detect.py	1;"	kind:file	line:1
+detections	../detect.py	/^            detections = model(input_imgs)$/;"	kind:variable	line:77
+detections	../detect.py	/^            detections = non_max_suppression(detections, opt.conf_thres, opt.nms_thres)$/;"	kind:variable	line:78
+detections	../detect.py	/^            detections = rescale_boxes(detections, opt.img_size, img.shape[:2])$/;"	kind:variable	line:109
+device	../detect.py	/^    device = torch.device("cuda" if torch.cuda.is_available() else "cpu")$/;"	kind:variable	line:39
+device	../test.py	/^    device = torch.device("cuda" if torch.cuda.is_available() else "cpu")$/;"	kind:variable	line:74
+device	../train.py	/^    device = torch.device("cuda" if torch.cuda.is_available() else "cpu")$/;"	kind:variable	line:44
+epoch_batches_left	../train.py	/^            epoch_batches_left = len(dataloader) - (batch_i + 1)$/;"	kind:variable	line:144
+evaluate	../test.py	/^def evaluate(model, path, info, iou_thres, conf_thres, nms_thres, img_size, batch_size):$/;"	kind:function	line:23
+evaluation_metrics	../train.py	/^            evaluation_metrics = [$/;"	kind:variable	line:165
+filename	../detect.py	/^        filename = path.split("\/")[-1].split(".")[0]$/;"	kind:variable	line:139
+formats	../train.py	/^                formats = {m: "%.6f" for m in metrics}$/;"	kind:variable	line:125
+forward	../models.py	/^    def forward(self, x):$/;"	kind:member	line:94
+forward	../models.py	/^    def forward(self, x, targets=None):$/;"	kind:member	line:246
+forward	../models.py	/^    def forward(self, x, targets=None, img_dim=None):$/;"	kind:member	line:135
+get_batch_statistics	../utils/utils.py	/^def get_batch_statistics(outputs, targets, iou_threshold):$/;"	kind:function	line:145
+horisontal_flip	../utils/datasets.py	/^def horisontal_flip(images, targets):$/;"	kind:function	line:47
+img	../detect.py	/^        img = np.array(Image.open(path))$/;"	kind:variable	line:101
+img_detections	../detect.py	/^    img_detections = []  # Stores detections for each image index$/;"	kind:variable	line:67
+img_size	../test.py	/^        img_size=opt.img_size,$/;"	kind:variable	line:99
+img_size	../train.py	/^                img_size=opt.img_size,$/;"	kind:variable	line:162
+imgs	../detect.py	/^    imgs = []  # Stores image paths$/;"	kind:variable	line:66
+imgs	../train.py	/^            imgs = Variable(imgs.to(device))$/;"	kind:variable	line:104
+inference_time	../detect.py	/^        inference_time = datetime.timedelta(seconds=current_time - prev_time)$/;"	kind:variable	line:82
+info	../test.py	/^        info=valid_info,$/;"	kind:variable	line:95
+info	../train.py	/^                info=valid_info,$/;"	kind:variable	line:158
+input_imgs	../detect.py	/^        input_imgs = Variable(input_imgs.type(Tensor))$/;"	kind:variable	line:73
+iou_thres	../test.py	/^        iou_thres=opt.iou_thres,$/;"	kind:variable	line:96
+iou_thres	../train.py	/^                iou_thres=0.5,$/;"	kind:variable	line:159
+list_of_scalars_summary	../utils/logger.py	/^    def list_of_scalars_summary(self, tag_value_pairs, step):$/;"	kind:member	line:14
+load_classes	../utils/utils.py	/^def load_classes(path):$/;"	kind:function	line:18
+load_darknet_weights	../models.py	/^    def load_darknet_weights(self, weights_path):$/;"	kind:member	line:266
+log_str	../train.py	/^            log_str = "\\n---- [Epoch %d\/%d, Batch %d\/%d] ----\\n" % (epoch, opt.epochs, batch_i, len(dataloader))$/;"	kind:variable	line:119
+logger	../train.py	/^    logger = Logger("logs")$/;"	kind:variable	line:42
+logger.py	../utils/logger.py	1;"	kind:file	line:1
+metric_table	../train.py	/^            metric_table = [["Metrics", *[f"YOLO Layer {i}" for i in range(len(model.yolo_layers))]]]$/;"	kind:variable	line:121
+metrics	../train.py	/^    metrics = [$/;"	kind:variable	line:81
+model	../detect.py	/^    model = Darknet(opt.model_def, img_size=opt.img_size).to(device)$/;"	kind:variable	line:44
+model	../test.py	/^    model = Darknet(opt.model_def).to(device)$/;"	kind:variable	line:82
+model	../train.py	/^    model = Darknet(opt.model_def).to(device)$/;"	kind:variable	line:58
+models.py	../models.py	1;"	kind:file	line:1
+n_cls_preds	../detect.py	/^            n_cls_preds = len(unique_labels)$/;"	kind:variable	line:111
+nms_thres	../test.py	/^        nms_thres=opt.nms_thres,$/;"	kind:variable	line:98
+nms_thres	../train.py	/^                nms_thres=0.5,$/;"	kind:variable	line:161
+non_max_suppression	../utils/utils.py	/^def non_max_suppression(prediction, conf_thres=0.5, nms_thres=0.4):$/;"	kind:function	line:226
+num_workers	../detect.py	/^        num_workers=opt.n_cpu,$/;"	kind:variable	line:59
+num_workers	../train.py	/^        num_workers=opt.n_cpu,$/;"	kind:variable	line:74
+opt	../detect.py	/^    opt = parser.parse_args()$/;"	kind:variable	line:36
+opt	../test.py	/^    opt = parser.parse_args()$/;"	kind:variable	line:71
+opt	../train.py	/^    opt = parser.parse_args()$/;"	kind:variable	line:39
+optimizer	../train.py	/^    optimizer = torch.optim.Adam(model.parameters())$/;"	kind:variable	line:79
+pad_to_square	../utils/datasets.py	/^def pad_to_square(img, pad_value):$/;"	kind:function	line:24
+parse_config.py	../utils/parse_config.py	1;"	kind:file	line:1
+parse_data_config	../utils/parse_config.py	/^def parse_data_config(path):$/;"	kind:function	line:23
+parse_model_config	../utils/parse_config.py	/^def parse_model_config(path):$/;"	kind:function	line:3
+parser	../detect.py	/^    parser = argparse.ArgumentParser()$/;"	kind:variable	line:25
+parser	../test.py	/^    parser = argparse.ArgumentParser()$/;"	kind:variable	line:60
+parser	../train.py	/^    parser = argparse.ArgumentParser()$/;"	kind:variable	line:26
+path	../test.py	/^        path=valid_path,$/;"	kind:variable	line:94
+path	../train.py	/^                path=valid_path,$/;"	kind:variable	line:157
+pin_memory	../train.py	/^        pin_memory=True,$/;"	kind:variable	line:75
+prev_time	../detect.py	/^        prev_time = current_time$/;"	kind:variable	line:83
+prev_time	../detect.py	/^    prev_time = time.time()$/;"	kind:variable	line:70
+random_resize	../utils/datasets.py	/^def random_resize(images, min_size=288, max_size=448):$/;"	kind:function	line:41
+rescale_boxes	../utils/utils.py	/^def rescale_boxes(boxes, current_dim, original_shape):$/;"	kind:function	line:36
+resize	../utils/datasets.py	/^def resize(image, size):$/;"	kind:function	line:36
+row_metrics	../train.py	/^                row_metrics = [formats[metric] % yolo.metrics.get(metric, 0) for yolo in model.yolo_layers]$/;"	kind:variable	line:128
+s	../detect.py	/^                    s=classes[int(cls_pred)],$/;"	kind:variable	line:129
+save_darknet_weights	../models.py	/^    def save_darknet_weights(self, path, cutoff=-1):$/;"	kind:member	line:319
+scalar_summary	../utils/logger.py	/^    def scalar_summary(self, tag, value, step):$/;"	kind:member	line:9
+shuffle	../detect.py	/^        shuffle=False,$/;"	kind:variable	line:58
+shuffle	../train.py	/^        shuffle=True,$/;"	kind:variable	line:73
+start_time	../train.py	/^        start_time = time.time()$/;"	kind:variable	line:100
+targets	../train.py	/^            targets = Variable(targets.to(device), requires_grad=False)$/;"	kind:variable	line:105
+tensorboard_log	../train.py	/^                tensorboard_log = []$/;"	kind:variable	line:132
+test.py	../test.py	1;"	kind:file	line:1
+time_left	../train.py	/^            time_left = datetime.timedelta(seconds=epoch_batches_left * (time.time() - start_time) \/ (batch_i + 1))$/;"	kind:variable	line:145
+to_cpu	../utils/utils.py	/^def to_cpu(tensor):$/;"	kind:function	line:14
+train.py	../train.py	1;"	kind:file	line:1
+train_info	../train.py	/^    train_info = data_config["train_info"]$/;"	kind:variable	line:52
+train_path	../train.py	/^    train_path = data_config["train"]$/;"	kind:variable	line:51
+unique_labels	../detect.py	/^            unique_labels = detections[:, -1].cpu().unique()$/;"	kind:variable	line:110
+utils.py	../utils/utils.py	1;"	kind:file	line:1
+valid_info	../test.py	/^    valid_info = data_config["valid_info"]$/;"	kind:variable	line:78
+valid_info	../train.py	/^    valid_info = data_config["valid_info"]$/;"	kind:variable	line:54
+valid_path	../test.py	/^    valid_path = data_config["valid"]$/;"	kind:variable	line:77
+valid_path	../train.py	/^    valid_path = data_config["valid"]$/;"	kind:variable	line:53
+verticalalignment	../detect.py	/^                    verticalalignment="top",$/;"	kind:variable	line:131
+weights_init_normal	../utils/utils.py	/^def weights_init_normal(m):$/;"	kind:function	line:27
+xywh2xyxy	../utils/utils.py	/^def xywh2xyxy(x):$/;"	kind:function	line:53

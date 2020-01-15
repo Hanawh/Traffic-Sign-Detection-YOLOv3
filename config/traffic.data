@@ -1,0 +1,8 @@
+classes=5
+train=/hdd2/wh/CVTT/JPEGImages
+valid=/hdd2/wh/CVTT/JPEGImages
+train_info=/hdd2/wh/CVTT/Annotations
+valid_info=/hdd2/wh/CVTT/Annotations
+names=config/traffic.names
+backup=backup/
+eval=coco
